@@ -1,6 +1,15 @@
 
 
+/* PC版だよ */
+
 /* フォントだよ */
+a {
+  display:block;
+}
+
+img {
+  display:block;
+}
 
 body{
   /* font-family: 'Raleway', sans-serif; */
@@ -21,7 +30,6 @@ body{
   left:0;
   z-index:1000;
   background-color:white;
-
 }
 
 .header-in {
@@ -101,19 +109,20 @@ body{
 .green-contents {
   display:flex;
   width:80%;
+  padding-top:50px;
   margin-left:auto;
   margin-right:auto;
 }
 
 .iphone-img{
-  margin-top:50px;
+  /* margin-top:50px; */
 
 }
 .green-language {
   color:white;
   width:680px;
-  height:200px;
-  margin-top:70px;
+  /* height:200px; */
+  /* margin-top:70px; */
   margin-left:150px;
   text-align:center;
   /* display:inline-block; */
@@ -236,12 +245,12 @@ body{
 
 .skill-img-all > .skill-img:not(:last-child) {
   margin-right:180px;
-  text-align:center;
 }
 
 .skill-img-all > .skill-img > p {
   font-size:16px;
   color:white;
+  text-align:center;
 }
 
 /* .skill-img > img {
@@ -283,7 +292,7 @@ body{
 
 /* フッターだよ */
 
-.footer-back{
+.footer-back {
   background-color:#74cfae;
 }
 
@@ -294,4 +303,126 @@ body{
   color:white;
   text-align:right;
   margin-right:50px;
+}
+
+/* メディアクエリだよ */
+
+/* タブレット版だよ */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+
+/* タブレットグリーン・ゾーンだよ */
+
+  .green-contents {
+    display:block;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:25px;
+  }
+
+  .iphone-img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .green-language {
+   /* padding-bottom:25px; */
+    margin-top:20px;
+    width:910px;
+/* 変わるかも */
+
+
+    margin-left:auto;
+    margin-right:auto;
+    /* text-align:center; */
+  }
+
+/* タブレット写真ゾーンだよ */
+
+  .article-img {
+  display:block;
+  width:300px;
+  margin:0 auto;
+  }
+
+.article-img > a {
+  display:block;
+  margin:0;
+}
+
+.article-img > a:nth-child(3n) {
+  margin-bottom:80px;
+}
+
+  .article-img > a > img {
+  display:block;
+  /* margin:0 auto; */
+  }
+
+  .article-all{
+  width:100%;
+}
+
+.article-bottom{
+  display:block;
+  margin:0;
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* タブレット写真下の文章だよ */
+
+.article-bottom > p {
+  width:800px;
+
+}
+
+.article-bottom > a {
+  /* display:block; */
+  margin-top:40px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  text-align:center;
+  width:92.81px;
+  margin:;
+}
+
+/* タブレットダークグレーゾーンだよ */
+
+.skill-contents  {
+  padding-bottom:88px;
+}
+
+.skill-img-all > .skill-img:not(:last-child) {
+    margin-right:0;
+  }
+/* この辺よくわからん */
+
+.skill-img-all{
+  display:block;
+  width:122px;
+}
+
+.skill-img-all > .skill-img:not(:last-child) {
+  margin-bottom:88px;
+}
+
+.skill-img > img {
+  display:block;
+}
+
+}
+
+
+/* スマホ版だよ */
+@media (min-width: 0px) and (max-width: 767px) {
+
+
+
+
+
 }
