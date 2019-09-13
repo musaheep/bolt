@@ -38,7 +38,7 @@ body {
   background-color:white;
 }
 
-.header-in {
+.header-all {
   display:flex;
   justify-content:space-between;
   padding:15px 0;
@@ -60,6 +60,11 @@ body {
   cursor:pointer;
 }
 
+/* sp画面で使うハンバーガーメニュー */
+.hamburger-menu {
+  display:none;
+}
+
 .contact-font:hover {
   color:#333;
 }
@@ -76,7 +81,12 @@ body {
 
 /* テーマだよ */
 
-.theme {
+/* SP画面で使う折り返し */
+.sp{
+  display:none;
+}
+
+.theme-all {
   text-align:center;
   padding:250px 0;
 }
@@ -100,7 +110,7 @@ body {
   background-color:#74cfae;
 }
 
-.green-contents {
+.green-all {
   display:flex;
   padding-top:50px;
 }
@@ -114,11 +124,11 @@ body {
 
 .green-title {
   font-size:24px;
-  margin-bottom:35px;
 }
 
 .green-paragraph {
   font-size:20px;
+  margin-top:35px;
 }
 
 /* 写真ゾーンだよ */
@@ -152,7 +162,7 @@ body {
   margin:100px 0 0 80px;
 }
 
-.article-img > a:nth-child(1),.article-img > a:nth-child(4) {
+.article-img > a:nth-child(3n+1) {
   margin-left:0;
 }
 
@@ -196,11 +206,11 @@ body {
   background-color:#4e4e4e;
   }
 
-.skill-contents {
+.skill-all {
   padding:70px 0 100px;
 }
 
-.skill-contents > h2 {
+.skill-all > h2 {
   color:white;
   font-size:24px;
   text-align:center;
@@ -271,97 +281,74 @@ body {
 
 /* タブレットグリーン・ゾーンだよ */
 
-  .green-contents {
-    display:block;
-    width:100%;
-    margin-left:auto;
-    margin-right:auto;
-    padding-bottom:25px;
+.green-all {
+  display:block;
+  width:100%;
+  padding-bottom:25px;
+}
+
+.iphone-img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
   }
 
-  .iphone-img {
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .green-language {
-    margin-top:20px;
-    width:910px;
-    max-width:100%;
+.green-language {
+  margin-top:20px;
+  width:910px;
+  max-width:100%;
 /* 変わるかも */
 
-
-    margin-left:auto;
-    margin-right:auto;
+  margin-left:auto;
+  margin-right:auto;
   }
 
 /* タブレット写真ゾーンだよ */
 
-  .article-img {
+.article-img {
   display:block;
   width:300px;
-  margin:0 auto;
+  margin:40px auto 0;
   }
 
 .article-img > a {
-  display:block;
   margin:0;
 }
 
-.article-img > a:nth-child(3n) {
+.article-img > a:nth-child(3) {
   margin-bottom:80px;
-}
-
-  .article-img > a > img {
-  display:block;
-  /* margin:0 auto; */
-  }
-
-  .article-all{
-  width:100%;
-}
-
-.article-bottom{
-  display:block;
-  margin:0;
-  /* width:800px; */
-  max-width:100%;
-  margin-left:auto;
-  margin-right:auto;
 }
 
 /* タブレット写真下の文章だよ */
 
+.article-bottom {
+  display:block;
+  max-width:100%;
+  margin:80px auto 0;
+}
+
 .article-bottom > p {
   width:800px;
   max-width:100%;
-
 }
 
 .article-bottom > a {
-  /* display:block; */
-  margin-top:40px;
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
+  margin:40px auto 0;
   text-align:center;
   width:92.81px;
-  margin:;
 }
 
 /* タブレットダークグレーゾーンだよ */
 
-.skill-contents  {
+.skill-all  {
   padding-bottom:88px;
 }
 
-.skill-img-all > .skill-img:not(:last-child) {
-    margin-right:0;
+.skill-img-all > .skill-img:not(:first-child) {
+    margin-left:0;
   }
-/* この辺よくわからん */
 
-.skill-img-all{
+.skill-img-all {
   display:block;
   width:122px;
 }
@@ -370,37 +357,25 @@ body {
   margin-bottom:88px;
 }
 
-.skill-img > img {
-  display:block;
-}
+/* タブレットSNSだお */
 
+.sns-all {
+  width:740px;
 }
-
+}
 
 /* スマホ版だよ */
+
 @media (max-width: 767px) {
 
   /* スマホ版ヘッダーゾーン */
 
-.header-in{
-  width:90%;
-}
-
-
-
-.contact-font{
+.contact-font {
   display:none;
   }
 
-/* .out-contact-font::after {
-  content:"";
-  border:1px solid #ddd;
-  padding:10px;
-  border-radius:4px;
-  width:300px;
-} */
-
-.hamburger-menu{
+.hamburger-menu {
+  display:block;
   border:1px solid #ddd;
   padding:10px;
   border-radius:4px;
@@ -408,59 +383,41 @@ body {
   height:20px;
 }
 
+.line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #ddd;
+  border-radius:50px;
+}
 
+.line:not(:first-child){
+  margin-top:5px;
+}
 
+/* スマホ版テーマゾーン */
+.sp {
+  display:block;
+}
 
+.theme-all{
+  padding-top:160px;
+  padding-bottom:130px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.title {
+  font-size:80px;
+}
 
 /* スマホ版SNSゾーン */
 
-.sns-all{
+.sns-all {
   display:block;
   max-width:100%;
-  margin-top:20px;
-  /* margin-bottom:20px; */
-  padding-bottom:20px;
+  padding:50px 0;
 }
 
-.sns-all > a{
-  margin-left:auto;
-  margin-right:auto;
+.sns-all > a {
+ width:100%;
 }
-
-
-
-
-
-
-
-
-
-
 }
