@@ -359,10 +359,6 @@ img{
   display:inline;
 }
 
-.skill-img{
-  text-align:center;
-}
-
 .skill-img-all > .skill-img:not(:last-child) {
   margin-bottom:88px;
 }
